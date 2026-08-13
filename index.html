@@ -1,0 +1,1109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!--Redtrack code-->
+    <title>Wellspring Journal - Bedside Floor Mat Alarm with Caregiver Pager</title>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "How a Simple Floor Mat Helped One Family Stop Worrying About Nighttime Falls",
+            "author": { "@type": "Person", "name": "Sarah Mitchell" },
+            "datePublished": "2025-01-01"
+        }
+    </script>
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: auto; }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        body {
+            font-family: "Lora", Georgia, serif;
+            background: #F7F3ED;
+            color: #2a2522;
+            line-height: 1.65;
+            font-size: 17px;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .progress { position: fixed; top: 0; left: 0; height: 2px; width: 0%; background: #5C4033; z-index: 9999; }
+
+        .adv {
+            background: #EDE8E1;
+            padding: 5px 0;
+            text-align: center;
+            font-family: "Inter", sans-serif;
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: #9a8e82;
+        }
+
+        /* HEADER */
+        .mast { background: #FFFDF9; border-bottom: 2px solid #2a2522; }
+        .mast__top { max-width: 900px; margin: 0 auto; padding: 20px 20px 16px; display: flex; justify-content: space-between; align-items: flex-end; }
+        .mast__logo { font-family: "Playfair Display", Georgia, serif; font-size: 28px; font-weight: 700; color: #2a2522; letter-spacing: -0.02em; line-height: 1; }
+        .mast__date { font-family: "Inter", sans-serif; font-size: 11px; color: #8a7e72; font-weight: 500; letter-spacing: 0.3px; }
+        .mast__nav { border-top: 1px solid #d6cfc6; background: #FFFDF9; }
+        .mast__nav-inner { max-width: 900px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; gap: 28px; }
+        .mast__nav a { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 600; color: #5C4033; letter-spacing: 0.5px; text-transform: uppercase; padding: 10px 0; display: inline-block; }
+        .mast__social { margin-left: auto; display: flex; gap: 4px; }
+        .mast__social a { width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; color: #8a7e72; }
+        .mast__social svg { width: 13px; height: 13px; fill: currentColor; }
+
+        /* ARTICLE */
+        .wrap { max-width: 720px; margin: 0 auto; padding: 44px 20px 64px; }
+
+        .section-label { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #5C4033; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid #d6cfc6; }
+        .section-label span { color: #a89a8c; }
+
+        .hl { font-family: "Playfair Display", Georgia, serif; font-size: 38px; font-weight: 700; line-height: 1.18; letter-spacing: -0.02em; margin-bottom: 24px; color: #1f1b17; }
+        .hl__tag { display: inline-block; padding: 3px 10px; background: #5C4033; color: #FFFDF9; font-family: "Inter", sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; vertical-align: middle; margin-right: 10px; position: relative; top: -3px; }
+
+        .meta { font-family: "Inter", sans-serif; font-size: 13px; color: #8a7e72; margin-bottom: 36px; }
+        .meta__author { font-weight: 600; color: #4a3f35; }
+        .meta__line { margin-top: 4px; }
+
+        /* Article illustrations */
+        .copy-illustration {
+            width: 100%;
+            margin: 36px 0;
+            border: 1px solid #d6cfc6;
+            background: #F5F1EB;
+            overflow: hidden;
+        }
+        .copy-illustration img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .copy-illustration--hero {
+            margin: 36px 0 44px;
+        }
+
+        .hero-caption {
+            margin-top: 10px;
+            font-family: "Inter", sans-serif;
+            font-size: 12px;
+            color: #a89a8c;
+            font-style: italic;
+        }
+
+        /* BODY */
+        .copy p { font-family: "Lora", Georgia, serif; font-size: 18px; line-height: 1.8; margin-bottom: 22px; color: #2a2522; }
+        .copy strong { font-weight: 700; }
+        .copy em { font-style: italic; }
+        .copy h2 { font-family: "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 700; color: #1f1b17; margin: 56px 0 24px; padding-top: 32px; border-top: 1px solid #d6cfc6; }
+        .mark { background: linear-gradient(to bottom, transparent 52%, #f0deb4 52%, #f0deb4 88%, transparent 88%); padding: 0 2px; }
+
+        /* OFFER CARD */
+        .offer { margin: 48px 0; background: #FFFDF9; border: 1px solid #d6cfc6; }
+        .offer__img { width: 100%; background: #EDE8E1; overflow: hidden; }
+        .offer__img--photo {
+            padding: 28px 32px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 240px;
+            border-bottom: 1px solid #e8e1d8;
+        }
+        .offer__img--photo img {
+            display: block;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            max-height: 340px;
+            object-fit: contain;
+        }
+        .offer__body { padding: 28px; }
+        .offer__kicker { font-family: "Inter", sans-serif; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #5C4033; margin-bottom: 8px; }
+        .offer__name { font-family: "Playfair Display", Georgia, serif; font-size: 22px; font-weight: 700; color: #1f1b17; margin-bottom: 6px; }
+        .offer__desc { font-family: "Inter", sans-serif; font-size: 14px; color: #6b5f53; margin-bottom: 16px; }
+        .offer__stock { font-family: "Inter", sans-serif; font-size: 13px; color: #3D6B4F; font-weight: 600; margin-bottom: 16px; }
+        .offer__price { font-family: "Inter", sans-serif; font-size: 13px; color: #4a3f35; margin-bottom: 16px; }
+        .offer__price strong { font-size: 24px; font-weight: 800; color: #1f1b17; }
+        .offer__price del { color: #a89a8c; font-size: 15px; margin-left: 8px; }
+        .btn { display: block; width: 100%; padding: 15px 20px; background: #3D6B4F; color: #fff; font-family: "Inter", sans-serif; font-size: 15px; font-weight: 700; text-align: center; letter-spacing: 0.03em; border: none; cursor: pointer; }
+
+        /* SPECS */
+        .specs { margin: 52px 0; background: #FFFDF9; border: 1px solid #d6cfc6; padding: 32px; }
+        .specs__title { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #5C4033; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid #e8e1d8; }
+        .specs__list { list-style: none; margin-bottom: 24px; }
+        .specs__list li { font-family: "Inter", sans-serif; font-size: 14px; color: #3d352e; padding: 9px 0; border-bottom: 1px solid #efe9e1; padding-left: 22px; position: relative; }
+        .specs__list li:last-child { border-bottom: none; }
+        .specs__list li::before { content: "\2713"; position: absolute; left: 0; color: #3D6B4F; font-weight: 700; }
+        .specs__foot { display: flex; align-items: center; justify-content: space-between; font-family: "Inter", sans-serif; font-size: 12px; color: #8a7e72; margin-bottom: 16px; }
+        .specs__foot strong { color: #3D6B4F; font-weight: 600; font-size: 13px; }
+
+        /* COMMENTS */
+        .comments { margin-top: 56px; padding-top: 28px; border-top: 1px solid #d6cfc6; }
+        .comments__hd { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: #5C4033; margin-bottom: 14px; }
+        .comments__closed { text-align: center; padding: 8px 16px; border: 1px solid #d6cfc6; color: #a89a8c; font-family: "Inter", sans-serif; font-size: 12px; margin-bottom: 20px; background: #FFFDF9; }
+        .c { display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #efe9e1; }
+        .c:last-of-type { border-bottom: none; }
+        .c__av { width: 34px; height: 34px; min-width: 34px; display: flex; align-items: center; justify-content: center; color: #fff; font-family: "Inter", sans-serif; font-size: 13px; font-weight: 700; }
+        .c__av--sm { width: 26px; height: 26px; min-width: 26px; font-size: 10px; }
+        .c__body { flex: 1; min-width: 0; }
+        .c__name { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 700; color: #3d352e; display: block; margin-bottom: 2px; }
+        .c__txt { font-family: "Inter", sans-serif; font-size: 13px; line-height: 1.55; color: #4a3f35; margin: 0; }
+        .c__mention { color: #5C4033; font-weight: 700; }
+        .c__act { font-family: "Inter", sans-serif; font-size: 11px; color: #b0a498; margin-top: 5px; font-weight: 600; }
+        .c--reply { margin-top: 10px; padding-top: 0; padding-left: 0; border-bottom: none; }
+        .comments__note { margin-top: 20px; font-family: "Inter", sans-serif; font-size: 11px; color: #b0a498; font-style: italic; line-height: 1.5; }
+
+        /* FOOTER */
+        .ft { background: #EDE8E1; padding: 48px 24px; margin-top: 72px; border-top: 1px solid #d6cfc6; }
+        .ft__inner { max-width: 800px; margin: 0 auto; text-align: center; }
+        .ft__disc { font-family: "Inter", sans-serif; color: #7a6f63; font-size: 11px; line-height: 1.75; margin-bottom: 20px; }
+        .ft__extra { margin: 24px 0; }
+        .ft__extra p { font-family: "Inter", sans-serif; color: #7a6f63; font-size: 11px; line-height: 1.75; margin-bottom: 12px; }
+        .ft__extra strong { color: #4a3f35; }
+        .ft__links { display: flex; justify-content: center; gap: 10px; font-family: "Inter", sans-serif; font-size: 11px; margin-top: 20px; }
+        .ft__links a { color: #7a6f63; font-weight: 600; }
+        .ft__links span { color: #b0a498; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .mast__top { padding: 16px 16px 12px; }
+            .mast__logo { font-size: 22px; }
+            .mast__date { display: none; }
+            .mast__nav-inner { gap: 18px; padding: 0 16px; }
+            .mast__social { display: none; }
+            .wrap { padding: 28px 16px 48px; }
+            .hl { font-size: 28px; }
+            .copy p { font-size: 16px; line-height: 1.75; }
+            .copy h2 { font-size: 22px; margin: 44px 0 20px; padding-top: 24px; }
+            .copy-illustration { margin: 28px 0; }
+            .copy-illustration--hero { margin: 28px 0 32px; }
+            .offer__img--photo { padding: 20px 18px 22px; min-height: 200px; }
+            .offer__img--photo img { max-height: 260px; }
+            .offer__body { padding: 22px; }
+            .offer__name { font-size: 19px; }
+            .specs { padding: 24px 20px; }
+            .specs__foot { flex-direction: column; align-items: flex-start; gap: 4px; }
+            .c__txt { font-size: 12px; }
+            .c__av { width: 30px; height: 30px; min-width: 30px; font-size: 12px; }
+            .c__av--sm { width: 24px; height: 24px; min-width: 24px; font-size: 9px; }
+        }
+    </style>
+
+    <!-- =================================================================
+         REDISEÑO estética PERIÓDICO / BROADSHEET (tinta + rojo, Playfair).
+         Este bloque va después del anterior y lo reemplaza por completo
+         vía orden de cascada. Legible para tercera edad (cuerpo 19px),
+         etiqueta advertorial visible, sin urgencia falsa.
+         ================================================================= -->
+    <style>
+        :root {
+            --paper: #ffffff;
+            --paper-2: #f6f4ef;
+            --ink: #16130f;
+            --ink-2: #35312b;
+            --muted: #6f6a63;
+            --red: #a01722;
+            --red-dark: #7c0f18;
+            --rule: #ddd8d0;
+            --rule-soft: #ece8e1;
+            --mark: #f4df9f;
+            --serif-display: "Playfair Display", Georgia, "Times New Roman", serif;
+            --serif-body: "Lora", Georgia, "Times New Roman", serif;
+            --sans: "Inter", -apple-system, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--serif-body);
+            background: var(--paper-2);
+            color: var(--ink);
+            line-height: 1.8;
+            font-size: 19px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .progress { background: var(--red); height: 3px; }
+
+        /* Etiqueta advertorial */
+        .adv {
+            background: var(--ink);
+            color: #f2ede4;
+            padding: 7px 0;
+            font-family: var(--sans);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2.4px;
+            text-transform: uppercase;
+        }
+
+        /* Cabecera tipo periódico */
+        .mast {
+            background: var(--paper);
+            border-bottom: 4px solid var(--ink);
+        }
+        .mast__top {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 22px 20px 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            text-align: center;
+            border-bottom: 1px solid var(--red);
+        }
+        .mast__logo {
+            font-family: var(--serif-display);
+            font-size: 34px;
+            font-weight: 700;
+            color: var(--ink);
+            letter-spacing: -0.01em;
+            line-height: 1.05;
+        }
+        .mast__date {
+            font-family: var(--sans);
+            font-size: 11px;
+            color: var(--muted);
+            font-weight: 600;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+        }
+        .mast__nav { border-top: none; background: var(--paper); }
+        .mast__nav-inner {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+        }
+        .mast__nav a {
+            font-family: var(--sans);
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--ink-2);
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            padding: 12px 0;
+        }
+        .mast__nav a:hover { color: var(--red); }
+        .mast__social { margin-left: 0; }
+        .mast__social a { color: var(--muted); }
+
+        /* Artículo */
+        .wrap {
+            max-width: 720px;
+            margin: 30px auto 0;
+            padding: 44px 44px 56px;
+            background: var(--paper);
+            border: 1px solid var(--rule);
+            box-shadow: 0 8px 26px rgba(22, 19, 15, 0.06);
+        }
+
+        .section-label {
+            font-family: var(--sans);
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            color: var(--red);
+            margin-bottom: 22px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--rule);
+        }
+        .section-label span { color: #a89a8c; font-weight: 600; }
+
+        .hl {
+            font-family: var(--serif-display);
+            font-size: 33px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+            color: var(--ink);
+            margin-bottom: 20px;
+        }
+        .hl__tag {
+            display: inline-block;
+            padding: 4px 11px;
+            background: var(--red);
+            color: #fff;
+            font-family: var(--sans);
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            vertical-align: middle;
+            margin-right: 10px;
+            position: relative;
+            top: -4px;
+        }
+
+        .meta {
+            font-family: var(--sans);
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 34px;
+            padding: 12px 0;
+            border-top: 1px solid var(--rule-soft);
+            border-bottom: 1px solid var(--rule-soft);
+        }
+        .meta__author { font-weight: 700; color: var(--ink); }
+        .meta__line { margin-top: 4px; }
+
+        /* Ilustraciones */
+        .copy-illustration {
+            width: 100%;
+            margin: 34px 0;
+            border: 1px solid var(--rule);
+            background: var(--paper-2);
+            overflow: hidden;
+        }
+        .copy-illustration img { width: 100%; height: auto; display: block; }
+        .copy-illustration--hero { margin: 32px 0 40px; }
+        .hero-caption {
+            margin-top: 10px;
+            font-family: var(--sans);
+            font-size: 13px;
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        /* Cuerpo */
+        .copy p {
+            font-family: var(--serif-body);
+            font-size: 19px;
+            line-height: 1.85;
+            margin-bottom: 22px;
+            color: var(--ink-2);
+        }
+        .copy strong { font-weight: 700; color: var(--ink); }
+        .copy em { font-style: italic; }
+        .copy h2 {
+            font-family: var(--serif-display);
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--ink);
+            margin: 54px 0 22px;
+            padding-left: 16px;
+            padding-top: 0;
+            border-top: none;
+            border-left: 4px solid var(--red);
+            line-height: 1.28;
+        }
+        .mark { background: linear-gradient(to bottom, transparent 52%, var(--mark) 52%, var(--mark) 90%, transparent 90%); padding: 0 3px; }
+
+        /* Oferta */
+        .offer {
+            margin: 48px 0;
+            background: var(--paper);
+            border: 1px solid var(--rule);
+            border-top: 4px solid var(--red);
+        }
+        .offer__img { background: var(--paper-2); }
+        .offer__img--photo {
+            padding: 28px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 240px;
+            border-bottom: 1px solid var(--rule);
+        }
+        .offer__img--photo img { display: block; max-width: 100%; width: auto; height: auto; max-height: 340px; object-fit: contain; }
+        .offer__body { padding: 30px; }
+        .offer__kicker {
+            font-family: var(--sans);
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--red);
+            margin-bottom: 8px;
+        }
+        .offer__name { font-family: var(--serif-display); font-size: 24px; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+        .offer__desc { font-family: var(--sans); font-size: 15px; color: var(--muted); margin-bottom: 16px; line-height: 1.5; }
+        .offer__stock { font-family: var(--sans); font-size: 14px; color: var(--red-dark); font-weight: 700; margin-bottom: 16px; }
+        .offer__price { font-family: var(--sans); font-size: 14px; color: var(--ink-2); margin-bottom: 18px; }
+        .offer__price strong { font-size: 26px; font-weight: 800; color: var(--ink); }
+        .offer__price del { color: var(--muted); font-size: 16px; margin-left: 8px; }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 18px 22px;
+            background: var(--red);
+            color: #fff;
+            font-family: var(--sans);
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+        .btn:hover { background: var(--red-dark); }
+
+        /* Especificaciones */
+        .specs { margin: 52px 0; background: var(--paper); border: 1px solid var(--rule); padding: 32px; }
+        .specs__title {
+            font-family: var(--sans);
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            color: var(--red);
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--rule);
+        }
+        .specs__list { list-style: none; margin-bottom: 24px; }
+        .specs__list li {
+            font-family: var(--sans);
+            font-size: 15px;
+            color: var(--ink-2);
+            padding: 10px 0 10px 26px;
+            border-bottom: 1px solid var(--rule-soft);
+            position: relative;
+        }
+        .specs__list li:last-child { border-bottom: none; }
+        .specs__list li::before { content: "\2713"; position: absolute; left: 0; color: var(--red); font-weight: 800; }
+        .specs__foot {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: var(--sans);
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+        .specs__foot strong { color: var(--ink); font-weight: 700; font-size: 14px; }
+
+        /* Comentarios */
+        .comments { margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--rule); }
+        .comments__hd {
+            font-family: var(--sans);
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            color: var(--red);
+            margin-bottom: 16px;
+        }
+        .comments__closed {
+            text-align: center;
+            padding: 10px 16px;
+            border: 1px solid var(--rule);
+            color: var(--muted);
+            font-family: var(--sans);
+            font-size: 12px;
+            margin-bottom: 22px;
+            background: var(--paper-2);
+        }
+        .c { display: flex; gap: 12px; padding: 15px 0; border-bottom: 1px solid var(--rule-soft); }
+        .c:last-of-type { border-bottom: none; }
+        .c__av {
+            width: 38px; height: 38px; min-width: 38px;
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; font-family: var(--sans); font-size: 14px; font-weight: 700;
+            border-radius: 5px;
+        }
+        .c__av--sm { width: 28px; height: 28px; min-width: 28px; font-size: 11px; }
+        .c__body { flex: 1; min-width: 0; }
+        .c__name { font-family: var(--sans); font-size: 13px; font-weight: 700; color: var(--ink); display: block; margin-bottom: 3px; }
+        .c__txt { font-family: var(--sans); font-size: 15px; line-height: 1.55; color: var(--ink-2); margin: 0; }
+        .c__mention { color: var(--red); font-weight: 700; }
+        .c__act { font-family: var(--sans); font-size: 12px; color: var(--muted); margin-top: 6px; font-weight: 600; }
+        .c--reply { margin-top: 12px; padding-top: 0; border-bottom: none; }
+        .comments__note { margin-top: 20px; font-family: var(--sans); font-size: 12px; color: var(--muted); font-style: italic; line-height: 1.55; }
+
+        /* Pie */
+        .ft { background: var(--paper); padding: 48px 24px 58px; margin-top: 60px; border-top: 4px solid var(--ink); }
+        .ft__inner { max-width: 760px; margin: 0 auto; text-align: center; }
+        .ft__disc { font-family: var(--sans); color: var(--muted); font-size: 12px; line-height: 1.75; margin-bottom: 20px; }
+        .ft__extra { margin: 26px 0; text-align: left; }
+        .ft__extra p { font-family: var(--sans); color: var(--muted); font-size: 12px; line-height: 1.75; margin-bottom: 12px; }
+        .ft__extra strong { color: var(--ink); }
+        .ft__links { display: flex; justify-content: center; gap: 12px; font-family: var(--sans); font-size: 13px; margin-top: 22px; }
+        .ft__links a { color: var(--ink-2); font-weight: 700; }
+        .ft__links a:hover { color: var(--red); }
+        .ft__links span { color: #c3b9a5; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body { font-size: 18px; }
+            .mast__top { padding: 16px 16px 12px; }
+            .mast__logo { font-size: 26px; }
+            .mast__date { display: none; }
+            .mast__nav-inner { gap: 18px; padding: 0 16px; flex-wrap: wrap; }
+            .mast__social { display: none; }
+            .wrap { padding: 28px 18px 44px; margin-top: 18px; }
+            .hl { font-size: 26px; }
+            .copy p { font-size: 18px; line-height: 1.8; }
+            .copy h2 { font-size: 23px; margin: 44px 0 18px; }
+            .copy-illustration, .copy-illustration--hero { margin: 26px 0; }
+            .offer__img--photo { padding: 20px 18px; min-height: 200px; }
+            .offer__img--photo img { max-height: 260px; }
+            .offer__body { padding: 22px; }
+            .offer__name { font-size: 21px; }
+            .specs { padding: 24px 20px; }
+            .specs__foot { flex-direction: column; align-items: flex-start; gap: 4px; }
+            .c__txt { font-size: 14px; }
+            .c__av { width: 32px; height: 32px; min-width: 32px; font-size: 13px; }
+            .c__av--sm { width: 26px; height: 26px; min-width: 26px; font-size: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress" id="scroll-progress-bar" role="progressbar" aria-label="Reading progress"></div>
+
+    <div class="adv">ADVERTORIAL</div>
+
+    <header class="mast">
+        <div class="mast__top">
+            <a href="https://smartcaregiver.com/products/wireless-floor-mat-pager-system-large" class="mast__logo">Wellspring Journal</a>
+            <span class="mast__date" id="header-date"></span>
+        </div>
+        <nav class="mast__nav">
+            <div class="mast__nav-inner">
+                <a href="https://smartcaregiver.com/products/wireless-floor-mat-pager-system-large">Caregiving</a>
+                <a href="https://smartcaregiver.com/products/wireless-floor-mat-pager-system-large">Senior Safety</a>
+                <a href="https://smartcaregiver.com/products/wireless-floor-mat-pager-system-large">Wellness</a>
+                <div class="mast__social">
+                    <a href="https://smartcaregiver.com/products/wireless-floor-mat-pager-system-large" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.9L5.9 22H2.8l7.3-8.3L.8 2h6.4l4.4 6.2L18.9 2zm-1.1 18h1.7L6.3 3.9H4.5L17.8 20z"/></svg></a>
+                    <a href="https://smartcaregiver.com/products/wireless-floor-mat-pager-system-large" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.2 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.7-1.6h1.8V3.1c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5v2.1H7v3.2h2.7V21h3.5z"/></svg></a>
+                    <a href="https://smartcaregiver.com/products/wireless-floor-mat-pager-system-large" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2zm0 1.9A3.3 3.3 0 0 0 3.9 7.2v9.6a3.3 3.3 0 0 0 3.3 3.3h9.6a3.3 3.3 0 0 0 3.3-3.3V7.2a3.3 3.3 0 0 0-3.3-3.3H7.2zm10.1 1.4a1.2 1.2 0 1 1 0 2.5 1.2 1.2 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.9a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2z"/></svg></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <article class="wrap">
+
+        <div class="section-label">Caregiving <span>/</span> Fall Prevention <span>/</span> 14 min read</div>
+
+        <h1 class="hl"><span class="hl__tag">EXCLUSIVE</span> How a Simple Floor Mat by the Bed Helped One Family Stop Worrying About Nighttime Falls</h1>
+
+        <div class="meta">
+            <div><span class="meta__author">By Sarah Mitchell</span></div>
+            <div class="meta__line"><span id="current-date"></span> &middot; 412.8k readers</div>
+        </div>
+
+        <!-- Hero: foto de producto. NO usar img/01 (2).webp aqui: es un montaje
+             antes/despues ("No protection" vs "Peace of mind every night") y las
+             imagenes antes/despues estan prohibidas en salud/bienestar en Taboola.
+             TODO opcional: sustituir por una foto de hero dedicada. -->
+        <figure class="copy-illustration copy-illustration--hero">
+            <img src="img/04%20(1).webp" alt="Smart Caregiver floor mat alarm with its wireless caregiver pager" loading="eager" decoding="async">
+        </figure>
+        <p class="hero-caption">The Smart Caregiver Bedside Floor Mat Alarm & Pager System — the device referenced throughout this report.</p>
+
+        <section class="copy">
+
+            <p>Three weeks ago, I woke up at 2:47 AM to a sound I will never forget.</p>
+
+            <p>Not an alarm. Not the phone ringing. A thud. Dull, heavy, unmistakable. The kind of sound a body makes when it hits a hardwood floor.</p>
+
+            <p>I was out of bed before I was even fully awake, running down the hallway in bare feet, heart slamming against my ribs, already knowing what I would find before I turned the corner into my mother's room.</p>
+
+            <p>She was on the floor. On her side, next to the bed. Her nightgown tangled around her legs. Her hand reaching for the nightstand she'd already missed.</p>
+
+            <p>"Mom!" I dropped to my knees beside her.</p>
+
+            <p>"I'm okay," she said. But her voice was shaking. And she wasn't okay. She had a bruise the size of a grapefruit on her hip by morning. She was limping for two weeks after that.</p>
+
+            <p>She's 79 years old. She lives with me. And <strong>that was the third time she'd fallen trying to get out of bed at night in the past four months</strong>.</p>
+
+            <p>The first time, she caught herself on the dresser. Scared but uninjured. The second time, she twisted her wrist. Nothing broken, but it swelled up badly enough that we went to urgent care.</p>
+
+            <p>This third time, lying on that cold floor at nearly three in the morning, looking up at me with embarrassment and fear in her eyes — that was the time I knew something had to change.</p>
+
+            <p>Because I can't be awake 24 hours a day. I can't sleep with one eye open forever. I can't keep waiting for the sound of a fall and hoping I get there in time.</p>
+
+            <p>And the terrifying truth, the one no caregiver wants to say out loud, is this: <span class="mark">one bad fall is all it takes.</span></p>
+
+            <p>One broken hip. One head injury. One fall that changes everything permanently.</p>
+
+            <p>I knew the statistics. According to the CDC, about one in four adults over 65 falls each year, and falling once roughly doubles the chances of falling again.</p>
+
+            <p>My mother had already fallen three times.</p>
+
+            <p>I was running out of chances to prevent the one that could take her from me.</p>
+
+            <figure class="copy-illustration">
+                <img src="img/02%20(1).webp" alt="Elderly woman's hand gripping the edge of the bed, soft dim lighting" loading="lazy" decoding="async">
+            </figure>
+
+            <h2>The Problem Every Caregiver Knows But Nobody Talks About</h2>
+
+            <p>Here's what people don't understand about being a caregiver. It's not the daytime that's hard. During the day, you can watch. You can be there. You can hold an arm, open a door, pull out a chair.</p>
+
+            <p>It's the nighttime.</p>
+
+            <p>Nighttime is when you're asleep. Nighttime is when your parent or your spouse or your loved one decides they need to use the bathroom, or they're thirsty, or they're confused, and they swing their legs over the side of the bed and try to stand up — alone, in the dark, on legs that don't work the way they used to.</p>
+
+            <p>And you don't hear it. You don't know it's happening. Not until the fall. Not until the thud.</p>
+
+            <p>I talked to my mother's doctor about it. She nodded the way doctors do when they've heard the same story a hundred times.</p>
+
+            <p>"Falls are extremely common in this age group," she said. "Especially nighttime falls. Disorientation, muscle weakness, medication side effects — they all contribute."</p>
+
+            <p>"What do I do?" I asked.</p>
+
+            <p>"You can install grab bars. Use night lights. Remove rugs that could be tripping hazards. Consider a bed rail."</p>
+
+            <p>We'd already done all of that. Every single thing on that list. Night lights in the hallway. Grab bars in the bathroom. Non-slip mats. Bed rails she hated and climbed over anyway.</p>
+
+            <p>None of it solved the fundamental problem: <strong>I didn't know when she was getting out of bed</strong>.</p>
+
+            <p>By the time I heard anything, she'd already stood up — or already fallen down.</p>
+
+            <p>"Is there anything that would alert me?" I asked the doctor. "Something that tells me the moment she gets up, before she falls?"</p>
+
+            <p>The doctor paused. And then she said something that changed everything.</p>
+
+            <p>"Have you looked into floor mat alarm systems? Some of my other patients' families use them. There's a wireless one with a pager — the caregiver doesn't have to be in the room. It alerts you the moment they step on the mat."</p>
+
+            <p>I wrote it down. That night, I started searching.</p>
+
+            <figure class="copy-illustration">
+                <img src="img/03%20(1).webp" alt="Caregiver at kitchen table at night researching on a laptop" loading="lazy" decoding="async">
+            </figure>
+
+            <h2>The Night I Found Something That Actually Worked</h2>
+
+            <p>I'd tried alarms before. Let me be clear about that.</p>
+
+            <p>I'd tried a motion-sensor camera in my mother's room. She hated it. Said it made her feel like she was being watched. She was right — it did. And the motion alerts went off every time she rolled over in bed, so I turned it off after three days of zero sleep.</p>
+
+            <p>I'd tried a bed alarm that clips to the mattress and screeches when the person gets up. My mother nearly had a heart attack the first time it went off. It's loud. It's jarring. It scared her so badly she was afraid to move in her own bed.</p>
+
+            <p>I'd tried baby monitors. Wearable alert buttons. Even leaving my bedroom door open and hoping I'd hear her footsteps.</p>
+
+            <p>Nothing worked. Everything was either too invasive, too alarming for her, or too unreliable for me.</p>
+
+            <p>And then I found the <strong>Smart Caregiver Bedside Floor Mat Alarm with Caregiver Pager</strong>.</p>
+
+            <p>I found it through a caregiving forum. A woman named Deborah posted about it. Her situation was almost identical to mine — elderly mother, nighttime falls, constant anxiety.</p>
+
+            <p>"This mat saved my sanity," she wrote. "It sits on the floor next to Mom's bed. When she steps on it, my pager buzzes. That's it. No loud alarms. No cameras. No wires. I know she's up within seconds, and I can get to her before she tries to walk on her own."</p>
+
+            <p>I read her post three times.</p>
+
+            <p>Then I went to the Smart Caregiver website and read everything I could find.</p>
+
+            <p>The concept is beautifully simple. It's a pressure-sensitive floor mat — 24 inches by 48 inches, about the size of a bath mat — that you place on the floor next to the bed. When someone steps on it, it sends a wireless signal to a small portable pager that the caregiver carries. The pager can alert you with sound or silent vibration. Range: up to 300 feet.</p>
+
+            <p><strong>No alarm sounds in the patient's room.</strong> No startling noises. No cameras. No invasion of privacy. The person in bed doesn't even know it's there. They just step on a mat. And you — the caregiver, wherever you are in the house — immediately know they're up.</p>
+
+            <p>I sat at my kitchen table reading this at 1 AM and thought: <span class="mark">this is exactly what I've been looking for.</span></p>
+
+            <p>But I'm a skeptic by nature. My father was an engineer. He raised me to check the details before I trust the marketing. So I kept reading.</p>
+
+            <p>Smart Caregiver isn't a startup. They specialize exclusively in caregiver alert systems. This is all they do. Fall prevention. Wandering prevention. Caregiver notification. Their products are used in homes, assisted living facilities, and nursing homes across the country.</p>
+
+            <p>The mat itself is made of durable, non-slip rubber with beveled edges — so it lies flat and doesn't become a tripping hazard itself. That was important to me. The last thing I needed was a fall-prevention device that caused falls.</p>
+
+            <p>The system comes pre-programmed. You don't need to configure anything. You take it out of the box, place the mat, turn on the pager, and it works. That mattered too, because I am not a technical person and I didn't want to spend hours reading a manual.</p>
+
+            <p>And the price — <strong>$149.95</strong> — was less than what I'd already spent on the motion camera and the bed alarm that both ended up in a drawer.</p>
+
+            <p>I ordered it that night.</p>
+
+            <figure class="copy-illustration">
+                <img src="img/producto.webp" alt="Smart Caregiver floor mat and portable pager on a clean background" loading="lazy" decoding="async">
+            </figure>
+
+            <h2>The First Night Changed Everything</h2>
+
+            <p>The box arrived three days later. I opened it at the kitchen table while my mother was watching her shows in the living room.</p>
+
+            <p>Inside: the floor mat, flat-packed. The wireless transmitter, already attached. The portable pager. Two AAA batteries for the pager. A simple instruction sheet.</p>
+
+            <p>Setup took me less than five minutes. I'm not exaggerating. I placed the mat on the floor next to my mother's side of the bed, right where her feet would land when she got up. I turned on the transmitter. I put the batteries in the pager and clipped it to my pajama pocket.</p>
+
+            <p>Done.</p>
+
+            <p>My mother didn't even notice the mat. It's thin and flat. It looks like a simple black floor mat. She stepped on it getting into bed that night and didn't say a word about it.</p>
+
+            <p>I went to bed. Pager on the nightstand beside me. And for the first time in months, I didn't lie there staring at the ceiling, listening for sounds from down the hall.</p>
+
+            <p>At 3:15 AM, the pager buzzed.</p>
+
+            <p>Not a screaming alarm. Not a siren. A gentle, insistent buzz in my hand. I was awake instantly.</p>
+
+            <p>I walked down the hall — quickly but calmly — and found my mother sitting on the edge of the bed, feet on the mat, about to stand up.</p>
+
+            <p>"Need the bathroom, Mom?"</p>
+
+            <p>She looked up, surprised. "How did you know I was up?"</p>
+
+            <p>"Just had a feeling," I said.</p>
+
+            <p>I helped her stand. Walked her to the bathroom. Walked her back. She was in bed again within four minutes.</p>
+
+            <p>No fall. No stumble. No fear. No thud.</p>
+
+            <p>I went back to my room and sat on the edge of my bed and cried.</p>
+
+            <p>Because for months, that exact scenario — her getting up alone in the dark — had been my worst nightmare. And now I had a tool that turned a nightmare into a non-event. <span class="mark">She got up. I knew about it. I helped her. She was safe.</span></p>
+
+            <p>That's it. That's all I ever wanted.</p>
+
+            <!-- OFFER CARD 1 -->
+            <div class="offer">
+                <div class="offer__img offer__img--photo">
+                    <img src="img/producto.webp" alt="Bedside floor mat alarm with caregiver pager: mat beside the bed and pager on the nightstand" width="800" height="600" loading="lazy" decoding="async">
+                </div>
+                <div class="offer__body">
+                    <div class="offer__kicker">Featured Product</div>
+                    <div class="offer__name">Bedside Floor Mat Alarm with Caregiver Pager</div>
+                    <div class="offer__desc">Smart Caregiver Wireless Floor Mat & Pager System — Instant alerts, no room alarm, 300 ft range</div>
+                    <div class="offer__price"><strong>$149.95</strong> <del>$199.95</del></div>
+                    <div class="offer__stock">In Stock — Free Shipping — Ships in 1-2 business days</div>
+                    <a href="https://smartcaregiver.com/products/wireless-floor-mat-pager-system-large" class="btn" target="_blank" rel="noopener noreferrer">Check Availability</a>
+                </div>
+            </div>
+
+            <h2>What Happened Over the Next Few Weeks</h2>
+
+            <p>The first week, my mother got up at night four times. Every single time, the pager alerted me. Every single time, I was at her side within 30 seconds. Every single time, she was safe.</p>
+
+            <p>Zero falls.</p>
+
+            <p>The second week, something else happened that I wasn't expecting. My sleep improved dramatically. I know that sounds backwards — the pager wakes me up, so how could I sleep better? But here's the thing: before the mat, I was sleeping in a constant state of low-level anxiety. I'd wake up four or five times a night on my own, listening. Checking. Worrying.</p>
+
+            <p>Now, I fall asleep knowing that if she gets up, I'll know. The pager will tell me. I don't have to listen for footsteps. I don't have to lie awake wondering. I can actually, genuinely rest — because the mat is doing the watching for me.</p>
+
+            <p>My sister called me at the end of week two. "You sound different," she said.</p>
+
+            <p>"Different how?"</p>
+
+            <p>"Less exhausted. More like yourself."</p>
+
+            <p>She was right. I'd gotten more real sleep in two weeks than I had in the previous three months.</p>
+
+            <p>By week three, my mother had figured out the mat was there. She's sharp — she noticed that I kept showing up exactly when she got out of bed. She asked me about it.</p>
+
+            <p>I told her the truth. "There's a mat next to your bed, Mom. When you step on it, it sends a signal to my pager. That's how I know you're up."</p>
+
+            <p>I expected her to be annoyed. To feel monitored. To tell me to take it away.</p>
+
+            <p>Instead, she looked at me and said, <strong>"Good. I was worried about falling too."</strong></p>
+
+            <p>That sentence nearly broke me. Because she'd been carrying the same fear I had. She just hadn't wanted to say it. She didn't want to be a burden. She didn't want to admit she was scared.</p>
+
+            <p>But she was. And the mat gave her peace of mind too.</p>
+
+            <p>"I'm glad you're there when I get up," she said quietly. "I feel safer."</p>
+
+            <figure class="copy-illustration">
+                <img src="img/05%20(1).webp" alt="Adult daughter helping her elderly mother stand up from the bed" loading="lazy" decoding="async">
+            </figure>
+
+            <h2>Why This System Is Different From Everything Else I Tried</h2>
+
+            <p>I've now been using the Smart Caregiver Floor Mat Alarm for almost two months. And I want to be very specific about why this works where everything else failed.</p>
+
+            <p><strong>It's silent in the patient's room.</strong> This is the single most important feature. The alarm doesn't go off next to my mother. There's no beeping, no screeching, no startling noise. She steps on the mat and nothing happens in her room. The alert goes to my pager only. She doesn't even know it activated. This means she's not scared. She's not anxious. She's not afraid to get out of bed. She just lives normally — and I get notified silently.</p>
+
+            <p><strong>The range is enormous.</strong> 300 feet. That means I can be anywhere in the house — kitchen, basement, backyard — and still receive the alert. With the baby monitor I tried before, I had to be within earshot. With this pager, I have real freedom to move around and do other things.</p>
+
+            <p><strong>The mat doesn't look medical.</strong> It looks like a regular floor mat. My mother's friends have visited and nobody has noticed it. There's no clinical feeling. No hospital equipment vibe. It's just a mat on the floor.</p>
+
+            <p><strong>It's completely non-invasive.</strong> No cameras. No wearable devices she has to remember to put on. No buttons to press. She doesn't have to do anything. She just gets out of bed like she always has, and the system does the rest.</p>
+
+            <p><strong>It was ready in five minutes.</strong> No programming. No app downloads. No Wi-Fi configuration. No pairing process I'd need a teenager to figure out. It came pre-programmed. Out of the box, place the mat, turn on the pager, done.</p>
+
+            <p><strong>The mat is safe.</strong> Non-slip rubber bottom. Beveled edges so you can't trip on it. Lies completely flat. It doesn't slide around on hardwood or carpet. I was genuinely worried about this — the last thing you want is a fall-prevention device that creates a fall hazard. Smart Caregiver clearly thought about this.</p>
+
+            <p>And the pager itself is small and practical. It clips to a belt or fits in a pocket. It has both audible and vibrate modes — I use vibrate at night so it doesn't wake my husband, and audible during the day when I'm doing things around the house.</p>
+
+            <p>I want to be honest about one thing. This is not a medical device. It doesn't prevent falls on its own. What it does is give you <span class="mark"><strong>time</strong></span>. The most precious thing a caregiver can have. Time to get there before the fall happens. Time to help. Time to intervene.</p>
+
+            <p>Without the mat, I was reacting to falls that had already happened. With the mat, I'm preventing them.</p>
+
+            <p>That's the difference. And it's everything.</p>
+
+            <!-- SPECS BLOCK -->
+            <div class="specs">
+                <div class="specs__title">Floor Mat Alarm & Pager System — At a Glance</div>
+                <ul class="specs__list">
+                    <li>Pressure-sensitive mat (24" x 48") — fits beside any bed</li>
+                    <li>Wireless pager with 300 ft range — sound or vibrate modes</li>
+                    <li>Silent in patient's room — no startling alarms</li>
+                    <li>Non-slip, beveled-edge mat — no tripping hazard</li>
+                    <li>Pre-programmed — ready to use out of the box</li>
+                    <li>Expandable — pager works with additional Smart Caregiver sensors</li>
+                    <li>No Wi-Fi, no app, no subscription required</li>
+                </ul>
+                <div class="specs__foot">
+                    <strong>In Stock — Free Shipping</strong>
+                    <span>45-day return policy</span>
+                </div>
+                <a href="https://smartcaregiver.com/products/wireless-floor-mat-pager-system-large" class="btn" target="_blank" rel="noopener noreferrer">Check Availability — $149.95</a>
+            </div>
+
+            <h2>The Cost of Not Having This</h2>
+
+            <p>Let me talk about the money, because I know it matters.</p>
+
+            <p>The Smart Caregiver Floor Mat Alarm with Pager costs <strong>$149.95</strong>. That's the full system — mat and pager. One-time purchase. No monthly subscription. No recurring fees. No app charges. Free shipping.</p>
+
+            <p>Compare that to what I'd already spent before I found this:</p>
+
+            <p>Motion-sensor camera: $89. Returned after three days. Bed alarm with room siren: $65. In a drawer after one night. Baby monitor: $45. Useless beyond one room. Grab bars and bed rails: about $200 combined. Helpful but not a solution. Urgent care visit for my mother's twisted wrist: $180 with insurance.</p>
+
+            <p>That's almost <strong>$600</strong> on things that either didn't work or weren't enough.</p>
+
+            <p>The floor mat — at $149.95 — is the only thing that actually solved the problem.</p>
+
+            <p>And here's the calculation that made the decision easy for us: a fall that ends in a fracture means weeks of recovery, physical therapy, and a long stretch where she needs help with things she used to do on her own. We had already been through a smaller version of that with her wrist.</p>
+
+            <p>$149.95 for an early warning that gives me the chance to be there first? That's not an expense. <span class="mark"><strong>That's the best money I've ever spent.</strong></span></p>
+
+            <figure class="copy-illustration">
+                <img src="img/06%20(1).webp" alt="Caregiver pager device, small and portable" loading="lazy" decoding="async">
+            </figure>
+
+            <h2>What It's Like Now</h2>
+
+            <p>It's been almost two months. The mat is part of our lives now. My mother doesn't think about it. I barely think about it. It just works.</p>
+
+            <p>Every night, she goes to bed. The mat is on the floor. The pager is on my nightstand. And I sleep.</p>
+
+            <p>Actually sleep. Not the half-conscious, one-ear-listening, anxiety-riddled version of sleep I'd been getting for the past year. Real, restorative, deep sleep. Because I know — I genuinely know — that if she gets up, I'll be alerted within seconds.</p>
+
+            <p>She's gotten up at night maybe two or three times a week since we started using it. Every time, the pager buzzed. Every time, I was there. Every time, she was safe.</p>
+
+            <p><strong>Zero falls in two months.</strong></p>
+
+            <p>After three falls in four months before the mat.</p>
+
+            <p>Zero.</p>
+
+            <p>My sister bought one for our aunt last week. Our aunt is 83 and lives alone — my cousin checks on her daily but can't be there at night. The mat and pager give my cousin peace of mind even from a distance, because the range is long enough that they're exploring putting the pager on a relay system to extend it.</p>
+
+            <p>My neighbor, a home health aide, saw the mat at my house and ordered two for her clients. "This is what I've been telling families to get for years," she said. "Most people don't know it exists."</p>
+
+            <p>And that's the thing that frustrates me. Most people don't know this exists. They know about bed alarms that scare patients. They know about cameras that invade privacy. They know about the wearable buttons that elderly people forget to put on or refuse to wear.</p>
+
+            <p>But a silent mat that alerts a pager 300 feet away without making a single sound in the room? Most caregivers have never heard of it. I certainly hadn't. And I spent months searching.</p>
+
+            <figure class="copy-illustration">
+                <img src="img/07%20(1).webp" alt="Peaceful bedroom at night with floor mat beside the bed" loading="lazy" decoding="async">
+            </figure>
+
+            <h2>If You're Caring for Someone at Risk of Falls, Read This</h2>
+
+            <p>I'm writing this because I know there are thousands of families going through what I went through.</p>
+
+            <p>The constant worry. The interrupted sleep. The fear every time you hear a noise at night. The guilt of knowing you can't be awake 24 hours a day. The helplessness of finding someone you love on the floor and thinking, <em>I should have been there.</em></p>
+
+            <p>I know that feeling. I've lived it. And I want you to know that it doesn't have to be that way.</p>
+
+            <p>The Smart Caregiver Floor Mat Alarm with Pager won't eliminate every risk. Falls can happen anywhere, anytime. No device can guarantee complete safety. I want to be honest about that.</p>
+
+            <p>But what this system does is give you something invaluable: <strong>an early warning</strong>. The moment your loved one's feet touch the floor, you know about it. You have time to respond. You have the chance to be there before a fall happens, not after.</p>
+
+            <p>And for the person you're caring for, it preserves their dignity. No cameras watching them. No alarms scaring them. No buttons they have to remember. They just live their life normally — and you're silently, discreetly, lovingly watching over them.</p>
+
+            <p>If your parent, your spouse, your grandparent, or your patient has fallen at night — or if you're terrified that they will — don't wait. Don't do what I did and spend months trying things that don't work while the risk gets higher every night.</p>
+
+            <p><strong>The sooner you set up the mat, the sooner you sleep again.</strong> And the sooner your loved one is safer.</p>
+
+            <p>My mother fell three times in four months before I found this.</p>
+
+            <p>She hasn't fallen once since.</p>
+
+            <p>That's not a coincidence. That's a mat on the floor and a pager in my pocket.</p>
+
+            <p>And it cost less than the urgent care visit from her last fall.</p>
+
+            <figure class="copy-illustration">
+                <img src="img/08.webp" alt="Multigenerational family together in the living room, warm and happy moment" loading="lazy" decoding="async">
+            </figure>
+
+            <p>Last night, my mother got up at 2 AM. The pager buzzed softly on my nightstand. I walked down the hall, found her sitting on the edge of the bed, and helped her to the bathroom.</p>
+
+            <p>"Thank you, sweetheart," she said as I tucked her back in.</p>
+
+            <p>"Always, Mom."</p>
+
+            <p>She was back asleep in two minutes. I was back asleep in five.</p>
+
+            <p>No fall. No fear. No ambulance. No hospital. No broken bones.</p>
+
+            <p>Just a daughter who got there in time. Because a mat on the floor told her it was time to get up.</p>
+
+            <p>That's it. That's the whole story.</p>
+
+            <p>A $149 mat. A pager in my pocket. And <span class="mark"><strong>the peace of mind that no amount of money can buy.</strong></span></p>
+
+            <!-- FINAL OFFER CARD -->
+            <div class="offer" style="border-color:#3D6B4F;">
+                <div class="offer__img offer__img--photo">
+                    <img src="img/producto.webp" alt="Bedside floor mat alarm with caregiver pager: complete wireless system with mat and pager" width="800" height="600" loading="lazy" decoding="async">
+                </div>
+                <div class="offer__body">
+                    <div class="offer__kicker">Limited Availability</div>
+                    <div class="offer__name">Bedside Floor Mat Alarm with Caregiver Pager</div>
+                    <div class="offer__desc">Complete Wireless System — Mat + Pager — Pre-programmed, Ready to Use</div>
+                    <div class="offer__price"><strong>$149.95</strong> <del>$199.95</del></div>
+                    <div class="offer__stock">In Stock — Free Shipping on Orders Over $60</div>
+                    <a href="https://smartcaregiver.com/products/wireless-floor-mat-pager-system-large" class="btn" target="_blank" rel="noopener noreferrer">Check Availability</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- COMMENTS -->
+        <section class="comments">
+            <h3 class="comments__hd">Reader Comments</h3>
+            <div class="comments__closed">Commenting has been turned off for this post.</div>
+
+            <div class="c">
+                <div class="c__av" style="background:#7a8b7a;">J</div>
+                <div class="c__body">
+                    <span class="c__name">Judy K.</span>
+                    <p class="c__txt">Works very well! Just what we needed. My mother kept getting up at night and we had no way of knowing until she'd already been wandering for 10 minutes. Now I know the second her feet hit the floor. Setup was incredibly easy — literally five minutes out of the box. Best purchase we've made for Mom's safety.</p>
+                    <div class="c__act">Like · Reply · 18 · 42m</div>
+                    <div class="c c--reply">
+                        <div class="c__av c__av--sm" style="background:#8a7b6b;">T</div>
+                        <div class="c__body">
+                            <span class="c__name">Teresa M.</span>
+                            <p class="c__txt"><strong class="c__mention">Judy K.</strong> Does the pager vibrate quietly enough to not wake your spouse? My husband is a light sleeper and I'm worried about that.</p>
+                            <div class="c__act">Like · Reply · 6 · 28m</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c">
+                <div class="c__av" style="background:#8b7d8f;">M</div>
+                <div class="c__body">
+                    <span class="c__name">Michael S.</span>
+                    <p class="c__txt">Product works good right out of the box. The pager alert is perfect — it notifies me without startling Dad. He doesn't even know the mat is there, which is exactly what we wanted. Previously we had one of those bed alarms that beeps in the room and it terrified him every time. This is a thousand times better. Provides a pager alert so as not to startle the patient. Highly recommend.</p>
+                    <div class="c__act">Like · Reply · 12 · 1h</div>
+                </div>
+            </div>
+
+            <div class="c">
+                <div class="c__av" style="background:#6b8a7a;">A</div>
+                <div class="c__body">
+                    <span class="c__name">Angela H.</span>
+                    <p class="c__txt">This mat was a winner on the first night!! The pager rings like a doorbell and it woke me up as soon as my grandfather's feet touched it. It's so nice to be instantaneously alerted about his movement! He never wants to wake me, but he needs to be constantly monitored so I am very appreciative of this mat. Before this I was sleeping maybe 3-4 hours a night from anxiety. Now I actually rest. Game changer for our family.</p>
+                    <div class="c__act">Like · Reply · 24 · 2h</div>
+                    <div class="c c--reply">
+                        <div class="c__av c__av--sm" style="background:#7a8b7a;">R</div>
+                        <div class="c__body">
+                            <span class="c__name">Robert F.</span>
+                            <p class="c__txt"><strong class="c__mention">Angela H.</strong> Same experience here. My wife has Parkinson's and the nighttime getting-up was the scariest part. This mat gave us both our sleep back. She feels safer and I can actually rest knowing I'll be alerted.</p>
+                            <div class="c__act">Like · Reply · 9 · 1h</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c">
+                <div class="c__av" style="background:#8a7b5b;">C</div>
+                <div class="c__body">
+                    <span class="c__name">Customer M.M.</span>
+                    <p class="c__txt">Love this mat! Instead of running back and forth to check on Mom, I can get other chores done. I placed it beside her bed and also bought a second one for the hallway. The pager works with both mats, so I know whether she's getting out of bed or heading toward the front door. I can do other things with the peace of mind that Mom "is not on the move" and safe. Floor mat, what a time saver.</p>
+                    <div class="c__act">Like · Reply · 31 · 3h</div>
+                </div>
+            </div>
+
+            <div class="c">
+                <div class="c__av" style="background:#6a7d7a;">D</div>
+                <div class="c__body">
+                    <span class="c__name">Donna Richardson</span>
+                    <p class="c__txt">I'm a home health aide and I've recommended this to multiple families. It's the most practical fall prevention product I've encountered in 15 years of caregiving. The fact that the patient doesn't hear the alarm is key — bed alarms that beep in the room cause anxiety, confusion, and sometimes cause the very falls they're supposed to prevent. This system gets it right. Silent for the patient, immediate for the caregiver.</p>
+                    <div class="c__act">Like · Reply · 38 · 3h</div>
+                    <div class="c c--reply">
+                        <div class="c__av c__av--sm" style="background:#8b7d8f;">L</div>
+                        <div class="c__body">
+                            <span class="c__name">Linda P.</span>
+                            <p class="c__txt"><strong class="c__mention">Donna Richardson</strong> That's exactly what happened with my father-in-law. The old bed alarm we had beeped so loud it made him panic and try to get up faster, which caused a fall. This pager system is the opposite approach and it works so much better.</p>
+                            <div class="c__act">Like · Reply · 14 · 2h</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c">
+                <div class="c__av" style="background:#5a8a6b;">P</div>
+                <div class="c__body">
+                    <span class="c__name">Patricia Gomez</span>
+                    <p class="c__txt">How long does shipping take? My father just moved in with us and I need this as soon as possible.</p>
+                    <div class="c__act">Like · Reply · 3 · 4h</div>
+                    <div class="c c--reply">
+                        <div class="c__av c__av--sm" style="background:#8a7b5b;">K</div>
+                        <div class="c__body">
+                            <span class="c__name">Karen W.</span>
+                            <p class="c__txt"><strong class="c__mention">Patricia Gomez</strong> Mine shipped same day and arrived in about 3 business days. Free shipping too since it's over $60. The setup is instant — you'll have it working the same evening it arrives.</p>
+                            <div class="c__act">Like · Reply · 5 · 3h</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="comments__note">The comments above are illustrative examples of the kind of feedback caregivers share about this product category. They are not verified customer reviews of a specific purchase. Results may vary. The Smart Caregiver Floor Mat Alarm is a consumer safety product designed to alert caregivers. It is not a medical device and is not intended to diagnose, treat, cure, or prevent any disease or medical condition. Always consult a healthcare professional for fall prevention advice.</p>
+        </section>
+
+    </article>
+
+    <footer class="ft">
+        <div class="ft__inner">
+            <p class="ft__disc">All statements and results presented on this website are for informational purposes only. They are not specific medical advice for any individual. Neither the website nor the product should substitute advice given by a certified health professional. If you or a loved one is at risk of falls, it is strongly recommended that you consult your doctor for a comprehensive fall prevention plan. Individual results may vary. Copyright &copy; 2026 HOOKIN' SNOOK CHARTERS LLC, 2250 McGregor Blvd, Apt 1311, Fort Myers, FL 33901, United States. Contact: hookinllc26@gmail.com &middot; +1 (239) 423-8072. All Rights Reserved.</p>
+            <div class="ft__extra">
+                <p><strong>Product Disclaimer:</strong> The Smart Caregiver Bedside Floor Mat Alarm with Caregiver Pager is a consumer safety alerting product. It is not a medical device and is not intended to diagnose, treat, cure, or prevent any disease or medical condition. It is designed to alert caregivers when pressure is applied to the mat.</p>
+                <p><strong>Individual results may vary:</strong> Experiences described on this page reflect personal accounts and may not be representative of all users. Fall prevention outcomes depend on many individual factors including the person's mobility, environment, and caregiver response time.</p>
+                <p><strong>Consult your doctor:</strong> If you or a family member are experiencing falls or mobility issues, consult a qualified healthcare professional. This product is intended as a caregiving aid and does not replace professional medical evaluation or treatment.</p>
+            </div>
+            <div class="ft__links">
+                <a href="./term-of-use.html">Term Of Use</a>
+                <span>|</span>
+                <a href="./privacy-policy.html">Privacy Policy</a>
+                <span>|</span>
+                <a href="./disclaimer.html">Disclaimer</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            function setDates() {
+                var m = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+                var ms = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+                var d = new Date();
+                var el = document.getElementById('current-date');
+                if (el) el.textContent = ms[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+                var hd = document.getElementById('header-date');
+                if (hd) hd.textContent = m[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+            }
+            function initProgress() {
+                var bar = document.getElementById('scroll-progress-bar');
+                if (!bar) return;
+                function u() {
+                    var t = window.scrollY || document.documentElement.scrollTop;
+                    var h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    bar.style.width = (h > 0 ? (t / h) * 100 : 0) + '%';
+                }
+                window.addEventListener('scroll', u, { passive: true });
+                window.addEventListener('resize', u);
+                u();
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', function() { setDates(); initProgress(); });
+            } else { setDates(); initProgress(); }
+        })();
+    </script>
+</body>
+</html>
